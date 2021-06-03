@@ -5,7 +5,6 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{float}
-%\usepackage{natbib}
 \usepackage{gbt7714}
 \usepackage{pstricks,pst-node}
 \usepackage{color} 
@@ -62,8 +61,8 @@
 
 \begin{document}
 
-\includepdf[pages={1}]{main_cover.pdf}
-\includepdf[pages={1,2}]{statement.pdf}
+\includepdf[pages={1}]{./pdf/main_cover.pdf}
+\includepdf[pages={1,2}]{./pdf/statement.pdf}
 
 \thispagestyle{fancy}
 \pagenumbering{roman}
@@ -101,11 +100,25 @@
  
     \subsection{甲级}
 
-    。。。
+    ...
+    
+    \begin{table}[htbp]
+        \caption{tab caption}\label{tab:tab_name}
+        \centering
+        %\resizebox{\columnwidth}{!}{
+        \begin{tabular}{ccc}
+        \toprule
+            col\_1 & col\_2 & col\_3 \\ \midrule
+            item1 & item2 & item3 \\
+            item1 & item2 & item3 \\
+            item1 & item2 & item3 \\ \bottomrule
+        \end{tabular}%}
+    \end{table}
+
 
     \subsection{乙级}
 
-    。。。
+    ...
 
     %\begin{figure}[ht!]
     %    \centering
@@ -120,7 +133,7 @@
 
 \subsubsection{甲甲}
 
-    甲\cite{10.10086/nar/gkd1001}。
+    甲\cite{10.1093/nar/gky995}。
 
     \begin{equation}
         \text{Score}= \cfrac{\#\text{characters}}{\#\text{sequence}}
@@ -146,6 +159,19 @@
     \end{algorithm}
 
 \section{讨论}
+
+    %\begin{figure}[ht!]
+    %    \centering
+    %    \subfigure[sub fig 1 caption]{
+    %    \includegraphics[width=12cm]{./figs/sfig1.pdf}
+    %    }
+    %    \quad
+    %    \subfigure[sub fig 2 caption]{
+    %    \includegraphics[width=12cm]{./figs/sfig2.pdf}
+    %    }
+    %    \caption{SubFigure Example}
+    %    \label{fig:subfigure_example}
+    %\end{figure}
 
     我们考虑了...
 
